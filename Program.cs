@@ -59,13 +59,17 @@ namespace Tick_Tac_Toe_v2_master
             Console.Clear();
             Board();
 
-            if (flag == 1)
+            if (flag == -1)
             {
                 Console.WriteLine("Draw");
             }
-            Console.ReadLine();
+            
+            if (flag == 1)
+            {
+                Console.WriteLine("Winner winner chicken dinner!");
+            }
         }
-        private static Board()
+        private static void Board()
         {
             Console.WriteLine("     |     |      ");
             Console.WriteLine("  {0}  |  {1}  |  {2}", arr[1], arr[2], arr[3]);
